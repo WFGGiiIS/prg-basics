@@ -12,9 +12,9 @@ for char in plain_text:
     char_ord += 1
     # replace new character code with its
     # corresponding character (use chr())
-    #
+    newchar = chr(char_ord)
     # add encrypted character to encrypted text
-    encrypted_text = encrypted_text + char + ' '
+    encrypted_text = encrypted_text + newchar + ' '
 
 print(f'Plain_text: {plain_text}')
 print(f'Encrypted_text: {encrypted_text}')
